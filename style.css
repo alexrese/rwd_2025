@@ -29,3 +29,87 @@
       height: 200px;
     }
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background-color: #ededed;
+}
+
+.container-air {
+    perspective: 1000px;
+}
+
+.card-air {
+    transform-style: preserve-3d;
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.sneaker img {
+    width: 250px;
+    z-index: 2;
+    position: relative;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+h3 {
+    font-weight: 400;
+    color: #555;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sizes button {
+    border: none;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sizes button.active, .sizes button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.purchase button {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.purchase button:hover {
+    transform: scale(1.05);
+}
