@@ -12,16 +12,19 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="tenis.png">
 
     <title>RWD - Loja</title>
 </head>
 <!-- Menu -->
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RWD</a>
+            <a class="navbar-brand" href="#"><img src="rwd logo.jpg" width="40px" alt=""></a>
+            <!-- <a class="navbar-brand" href="#">RWD</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,10 +35,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Novidades</a>
+                        <a class="nav-link" href="#container-air">Novidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Modelos</a>
+                        <a class="nav-link" href="#modelos">Modelos</a>
                     </li>
                 </ul>
             </div>
@@ -75,43 +78,40 @@
     </div>
     <!-- Cards -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="row" id="modelos">
             <div class="col">
                 <div class="card">
                     <img src="quix.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Quix Classico</h5>
+                        <p class="card-text">Um tênis para todas as suas horas de skate.</p>
+                        <div class="purchase">
+                            <button>Purchase</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="quix.png" class="card-img-top" alt="...">
+                    <img src="nike simples.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Nike</h5>
+                        <p class="card-text">O melhor preço para você correr por ai.</p>
+                        <div class="purchase">
+                            <button>Purchase</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="quix.png" class="card-img-top" alt="...">
+                    <img src="adidas.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Addidas</h5>
+                        <p class="card-text">Somente hoje a metade do dobro.</p>
+                        <div class="purchase">
+                            <button>Purchase</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,22 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>Nike Vencer não é pra todo mundo</h2>
+            <div id="player"></div>
+            <!-- <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/EYB9DnpmBmc?si=h3I-l2ZL09oxKgdy?autoplay=1&mute=1"
+                    title="YouTube video player"  frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen></iframe>
+            </div> -->
+            <p>&copy; 2025 | Desenvolvido por RWD</p>
+        </div>
+    </footer>
 </body>
-        
+
 <script src="script.js"></script>
+
 </html>

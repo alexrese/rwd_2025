@@ -36,3 +36,30 @@ container_air.addEventListener("mouseleave", () => {
     purchase.style.transform = "translateZ(0px)";
     // circle.style.transform = "translateZ(0px)";
 });
+
+
+//para da rplay no video
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        videoId: 'EYB9DnpmBmc',
+        playerVars: {
+            autoplay: 1,
+            mute: 1,
+            controls: 0,
+            modestbranding: 1,
+            loop: 1,
+            playlist: 'EYB9DnpmBmc'
+        },
+        events: {
+            'onReady': function (event) {
+                event.target.playVideo();
+            }
+        }
+    });
+}
